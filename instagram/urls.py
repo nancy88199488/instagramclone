@@ -18,12 +18,10 @@ urlpatterns = [
     path('unfollow/<to_unfollow>', views.unfollow, name='unfollow'),
     path('post/<id>/like', PostLikeToggle.as_view(), name='liked'),
     path('api/post/<id>/like', PostLikeAPIToggle.as_view(), name='liked-api'),
-    # password reset
     path('reset_password/', auth_views.PasswordResetView.as_view(), name='reset_password'),
     path('reset_password_sent/', auth_views.PasswordResetDoneView.as_view(), name='password_reset_done'),
     path('reset<uidb64>/<token>/', auth_views.PasswordResetConfirmView.as_view(), name='password_reset_confirm'),
     path('reset_password_complete/', auth_views.PasswordResetCompleteView.as_view(), name='reset_password_complete'),
-    # password change
     path('password/', auth_views.PasswordChangeView.as_view(template_name='registration/change-password.html'), name='password')
 ]
 if settings.DEBUG:
