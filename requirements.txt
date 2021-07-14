@@ -29,6 +29,7 @@ django-heroku==0.3.1
 django-registration==3.1
 django-tinymce==2.8.0
 django-vote==2.1.7
+djangorestframework==3.12.4
 dnspython==2.1.0
 dominate==2.6.0
 duplicity==0.8.12.0
