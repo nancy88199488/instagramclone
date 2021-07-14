@@ -33,16 +33,7 @@ h1{
 .navbar{
     background-color:0d0630;
 }
-.instaicon{
-    display: inline-block;
-    background-image: url(/static/images/96319a506a03.png);
-    padding:0px;
-}
-.instaglyph{
-    display: inline-block;
-    background-image: url(/static/images/868a059b8fc8.png);
-    margin:8px;
-}
+
 .modal-body a{
     text-decoration:none;
     color:black;
